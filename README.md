@@ -31,8 +31,27 @@ Watch the recorded demonstration of the project.
 
 **[▶️ View / Download Demo Video](assets/videos/esp8266-blynk-demo.mp4)**
 
+HEAD
 > If the video does not play directly in your browser,
 > use the file page to access it.
+## 🔌 Circuit Diagram
+
+The following diagram illustrates the ESP8266 NodeMCU connections
+for the LED, active buzzer, and relay module, along with the
+corresponding Blynk virtual pin configuration.
+
+<p align="center">
+  <img src="assets/images/circuit-diagram.png"
+       alt="ESP8266 Blynk IoT Controller Wiring Diagram"
+       width="100%">
+</p>
+
+- NodeMCU ESP8266 development board
+- LED and suitable current-limiting resistor
+- Two-pin active buzzer (if using the tested active-buzzer setup)
+- Compatible relay module
+- Jumper wires and a suitable power source
+ df36a46 (Add ESP8266 wiring diagram)
 
 ## ✨ Features
 
