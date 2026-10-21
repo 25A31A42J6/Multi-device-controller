@@ -1,58 +1,157 @@
-<div align="center">
+# ⚡ ESP8266 Blynk IoT Controller
 
-<img src="assets/project-banner.png" alt="ESP8266 Blynk IoT Controller" width="100%">
+<p align="center">
+  <strong>A Wi-Fi-enabled IoT project for remotely controlling
+  multiple electronic devices using Blynk Cloud.</strong>
+</p>
 
-# ESP8266 Blynk IoT Controller
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-ESP8266-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/IoT-Blynk-23C48E?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Working-success?style=for-the-badge">
+</p>
 
-**Control your LED, buzzer, and relay remotely with NodeMCU ESP8266 and Blynk IoT Cloud.**
+---
 
-</div>
+## 📌 Overview
 
-# ESP8266 Blynk IoT Controller
+The ESP8266 Blynk IoT Controller is a Wi-Fi-based
+embedded systems project that allows users to control
+electronic components remotely through the Blynk mobile
+application and cloud platform.
 
-An IoT project using a NodeMCU/ESP8266 board, Arduino IDE, and Blynk IoT Cloud to control an LED, buzzer, and relay from a Blynk dashboard.
+The project integrates an ESP8266 NodeMCU board with an
+LED, an active buzzer, and a relay module to demonstrate
+IoT-based device control.
 
-## Features
+## 🎬 Project Demo
 
-- Wireless LED control using Blynk Virtual Pin `V0`
-- Buzzer control using Virtual Pin `V1`
-- Relay control using Virtual Pin `V2`
-- Wi-Fi reconnection attempts
-- Blynk reconnection attempts
+Watch the recorded demonstration of the project.
 
-## Hardware
+**[▶️ View / Download Demo Video](assets/videos/esp8266-blynk-demo.mp4)**
 
-- NodeMCU ESP8266 development board
-- LED and suitable current-limiting resistor
-- Two-pin active buzzer (if using the tested active-buzzer setup)
-- Compatible relay module
-- Jumper wires and a suitable power source
+> If the video does not play directly in your browser,
+> use the file page to access it.
 
-## Pin mapping
+## ✨ Features
 
-| Component | NodeMCU pin | ESP8266 GPIO | Blynk virtual pin |
-|---|---|---:|---|
+- 📱 Remote control through the Blynk application
+- 📡 Wi-Fi connectivity using ESP8266
+- 💡 LED control
+- 🔊 Active buzzer control
+- 🔌 Relay module control
+- ☁️ Cloud-connected device interaction
+- 🔧 Modular hardware and software design
+
+## 🛠️ Hardware Components
+
+| Component | Purpose |
+|---|---|
+| ESP8266 NodeMCU | Main microcontroller and Wi-Fi connectivity |
+| LED | Visual output |
+| Active buzzer | Audible output |
+| 5V relay module | Switching demonstration |
+| USB cable | Programming and power |
+| Jumper wires | Circuit connections |
+
+## 💻 Technology Stack
+
+- **Microcontroller:** ESP8266 NodeMCU
+- **Programming Language:** C++
+- **Development Environment:** Arduino IDE
+- **IoT Platform:** Blynk IoT
+- **Communication:** Wi-Fi
+- **Version Control:** Git and GitHub
+- **Large File Storage:** Git LFS
+
+## 🔌 Pin Configuration
+
+| Component | ESP8266 Pin | GPIO | Blynk Virtual Pin |
+|---|---|---|---|
 | LED | D4 | GPIO2 | V0 |
-| Buzzer | D5 | GPIO14 | V1 |
-| Relay input | D6 | GPIO12 | V2 |
+| Active Buzzer | D5 | GPIO14 | V1 |
+| Relay Module IN | D6 | GPIO12 | V2 |
 
-Check your exact board and module pin labels before wiring. Relay modules differ in trigger polarity and input requirements.
+> **Note:** Relay behavior depends on the module's trigger
+> polarity. Verify the logic before operating the circuit.
 
-## Setup
+## ⚙️ Getting Started
 
-1. Install Arduino IDE and the ESP8266 board support package.
-2. Install the **Blynk** library using Arduino IDE Library Manager.
-3. Copy `secrets.example.h` to a new file named `secrets.h` in the project root.
-4. Enter your own Wi-Fi SSID/password and Blynk template/device credentials in `secrets.h`.
-5. Open `esp8266-blynk-iot-controller.ino` in Arduino IDE.
-6. Select the correct ESP8266 board and serial port, then upload.
+### 1. Install the required software
 
-**Never commit `secrets.h`.** It is excluded by `.gitignore`. If credentials have ever been exposed, rotate the Blynk device token and change the Wi-Fi password before using them again.
+- Install Arduino IDE.
+- Install ESP8266 board support.
+- Install the Blynk library.
+- Connect the NodeMCU to your computer.
 
-## Safety
+### 2. Configure credentials
 
-Test the relay with a low-voltage DC load while developing. Do not connect household mains electricity unless you are qualified and using proper isolation, enclosure, and protection.
+Create a local `secrets.h` file using the supplied
+`secrets.example.h` template.
 
-## License
+Add your own Wi-Fi credentials and Blynk device
+credentials to the local configuration.
 
-MIT — see `LICENSE`.
+**Never commit real credentials, authentication tokens,
+or passwords to GitHub.**
+
+### 3. Configure Blynk
+
+Create a device in Blynk Cloud and configure the required
+virtual pins:
+
+- V0 — LED
+- V1 — Buzzer
+- V2 — Relay
+
+### 4. Upload the firmware
+
+Open the Arduino sketch in the `src/` directory, select
+the appropriate ESP8266 board and serial port, and upload
+the firmware.
+
+### 5. Test the device
+
+Connect the hardware, open the Blynk application, and
+test each configured control.
+
+## 🔐 Security
+
+- Keep `secrets.h` out of version control.
+- Use placeholder values in `secrets.example.h`.
+- Never publish Wi-Fi passwords or Blynk authentication tokens.
+- Regenerate credentials if they are accidentally exposed.
+
+## ⚠️ Safety
+
+Test the project using low-voltage DC circuits first.
+
+Do not connect mains electricity directly to the
+ESP8266 or breadboard. Any mains-voltage application
+requires properly rated equipment, isolation, and
+qualified supervision.
+
+## 📚 Learning Outcomes
+
+This project demonstrates practical concepts in:
+
+- Internet of Things (IoT)
+- Embedded systems programming
+- Wi-Fi-based communication
+- Cloud-connected device control
+- Microcontroller GPIO interfacing
+- Hardware and software integration
+- Git, GitHub, and Git LFS
+
+## 👨‍💻 Author
+
+**Jayadeep Paul**
+
+GitHub: [@25A31A42J6](https://github.com/25A31A42J6)
+
+---
+
+<p align="center">
+  Built to explore IoT, embedded systems, and connected devices. ⚡
+</p>
