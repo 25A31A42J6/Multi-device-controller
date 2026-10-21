@@ -42,6 +42,8 @@ IoT-based device control.
 
 Watch the recorded demonstration of the project.
 
+▶️ **[Watch the ESP8266 Multi-Device Controller Demo](https://drive.google.com/file/d/1XPzb5YJeVCQAknVJjvXitBZ80R_C3alT/view?usp=drive_link)**
+
 **[▶️ View / Download Demo Video](assets/videos/esp8266-blynk-demo.mp4)**
 
 HEAD
