@@ -1,0 +1,10 @@
+# Private credentials
+secrets.h
+
+# Arduino IDE
+*.hex
+*.elf
+
+# Python
+__pycache__/
+*.pyc
