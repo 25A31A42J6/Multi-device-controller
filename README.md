@@ -1,3 +1,16 @@
+<p align="center">
+  <img src="assets/project-banner.png"
+       alt="ESP8266 Blynk IoT Controller Banner"
+       width="100%">
+</p>
+
+<h1 align="center">ESP8266 Blynk IoT Controller</h1>
+
+<p align="center">
+  A Wi-Fi-enabled IoT project for remotely controlling
+  electronic devices using Blynk Cloud.
+</p>
+
 # ⚡ ESP8266 Blynk IoT Controller
 
 <p align="center">
