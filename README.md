@@ -1,3 +1,13 @@
+<div align="center">
+
+<img src="assets/project-banner.png" alt="ESP8266 Blynk IoT Controller" width="100%">
+
+# ESP8266 Blynk IoT Controller
+
+**Control your LED, buzzer, and relay remotely with NodeMCU ESP8266 and Blynk IoT Cloud.**
+
+</div>
+
 # ESP8266 Blynk IoT Controller
 
 An IoT project using a NodeMCU/ESP8266 board, Arduino IDE, and Blynk IoT Cloud to control an LED, buzzer, and relay from a Blynk dashboard.
